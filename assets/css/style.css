@@ -1,1 +1,36 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+body {
+  background-color: #F6F6F6;
+  font-family: "Roboto", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+  color: black;
+  margin: auto;
+  max-width: 1440px;
+}
+
+.header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
+}
+.header__nav--home {
+  display: none;
+}
+.header__nav--other {
+  display: block;
+}
+.header__nav--icon {
+  color: #353535;
+}
+.header__title {
+  font-family: "Shrikhand", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}/*# sourceMappingURL=style.css.map */

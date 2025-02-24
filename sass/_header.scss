@@ -1,0 +1,21 @@
+.header {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .15);
+    &__nav--home {
+        display: none;
+    }
+    &__nav--other {
+        display: block;
+    }
+    &__nav--icon {
+        color: $grey-dark;
+    }
+    &__title {
+        @include shrikhand-regular;
+        font-size: 30px;;
+    }
+}

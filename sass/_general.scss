@@ -1,0 +1,7 @@
+body {
+    background-color: $grey-light1;
+    @include roboto-regular;
+    color: black;
+    margin: auto;
+    max-width: 1440px;
+}
