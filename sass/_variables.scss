@@ -15,15 +15,15 @@ $secondary: #FF79DA;
 $medium: 768px;
 $large: 1024px;
 
-$medium-up: "only screen and -min-width: #{$medium})";
-$large-up: "only screen and -min-width: #{$large})";
+$medium-up: "only screen and (min-width: #{$medium})";
+$large-up: "only screen and (min-width: #{$large})";
 
 // **************  fonts  **************
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Sora:wght@100..800&display=swap');
 
 @mixin shrikhand-regular {
-    font-family: "Shrikhand", serif;
+    font-family: "Shrikhand", "Sora", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
@@ -31,7 +31,7 @@ $large-up: "only screen and -min-width: #{$large})";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
 
 @mixin roboto-regular {
-    font-family: "Roboto", serif;
+    font-family: "Roboto", "Sora", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;

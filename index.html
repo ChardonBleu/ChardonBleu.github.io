@@ -17,7 +17,7 @@
     
 <body>
     <header class="header">
-      <nav class="header__nav--home">
+      <nav class="header__nav--inactive">
         <i class="fa-solid fa-arrow-left header__nav--icon"></i>
       </nav>
       <h1 class="header__title">ohmyfood</h1>
@@ -29,11 +29,11 @@
         <div class="description__location">          
           <p><i class="fa-solid fa-location-dot fa-lg description__location--icon"></i>Paris, Belleville</p>
         </div>
-        <h2>Réservez le menu qui vous convient</h2>
-        <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-        <button type="button">
-          Explorez nos restaurants
-        </button>
+        <h2 class="description__title">Réservez le menu qui vous convient</h2>
+        <p class="description__subtitle">Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+        <p class="description__button">
+          <a href="#restaurants">Explorez nos restaurants</a>
+        </p>
       </section>
 
       <section>
@@ -54,7 +54,7 @@
         </ul>
       </section>
 
-      <section>
+      <section id="restaurants" class="restaurants">
         <h2>Restaurants</h2>
 
         <article>
