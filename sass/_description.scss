@@ -1,0 +1,25 @@
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    position:relative;
+    z-index: 5;
+
+    &__location{
+        width: 100%;
+        text-align: center;
+
+        @include font-medium;
+        font-size: 16px;
+        color: $grey-dark;
+
+        background-color: $grey-light2;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+        
+        &--icon {
+            padding-right: 15px;
+        }
+    }
+
+}
