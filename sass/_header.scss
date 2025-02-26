@@ -17,6 +17,6 @@
     }
     &__title {
         @include shrikhand-regular;
-        font-size: 30px;;
+        font-size: rem(30px);
     }
 }
