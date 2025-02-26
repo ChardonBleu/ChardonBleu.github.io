@@ -1,0 +1,22 @@
+.header {
+    background-color: white;
+    width: 100%;
+    @include flex-vcenter;
+    justify-content: space-around;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, .15);
+    position: relative;
+    z-index:10;
+    &__nav--inactive {
+        display: none;
+    }
+    &__nav--active {
+        display: block;
+    }
+    &__nav--icon {
+        color: $grey-dark;
+    }
+    &__title {
+        @include shrikhand-regular;
+        font-size: rem(30px);
+    }
+}

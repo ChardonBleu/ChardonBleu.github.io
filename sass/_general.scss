@@ -1,0 +1,33 @@
+@use 'sass:color';
+
+body {
+    background-color: $grey-light1;
+    @include roboto-regular;
+    font-size: $base-font-size;
+    color: black;
+    margin: auto;
+    max-width: 1440px;
+}
+
+
+// **************  mixins and functions **************
+@mixin flex-vcenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-col-hcenter {
+    @include flex-vcenter;
+    flex-direction: column;
+}
+
+@function whiteness($color, $percentage) {
+    @return color.adjust($color, $whiteness: $percentage);
+}
+
+@mixin buttons-hover($color1, $color2, $percentage) {
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, .35);
+    background: linear-gradient($gradient-angle,
+        whiteness($color1, $percentage),
+        whiteness($color2, $percentage));
+}
