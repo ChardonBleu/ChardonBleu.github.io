@@ -38,6 +38,40 @@ body {
   font-size: 1.875rem;
 }
 
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 8px 25px 8px 25px;
+}
+.footer__title {
+  font-family: "Shrikhand", "Sora", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+.footer__list {
+  list-style: none;
+  padding: 0;
+}
+.footer__link {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+}
+.footer__link--first {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 5px;
+}
+.footer__link--second {
+  margin: 5px;
+}
+
 .description {
   text-align: center;
   display: flex;
@@ -207,5 +241,4 @@ body {
   position: absolute;
   right: 30px;
   bottom: 35px;
-  color: linear-gradient(0deg, #9356DC, #FF79DA);
 }/*# sourceMappingURL=style.css.map */
