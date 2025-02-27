@@ -3,8 +3,6 @@
     @include flex-col-hcenter;
     position:relative;
     z-index: 5;
-    border-color: red;
-    border-style: s;
     &__location{
         width: 100%;
         @include font-medium;

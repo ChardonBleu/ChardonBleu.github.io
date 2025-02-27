@@ -48,7 +48,6 @@ $base-font-size: #{$base-font-number}px;
 
 @mixin roboto-regular {
     font-family: "Roboto", "Sora", sans-serif;
-    font-optical-sizing: auto;
     font-style: normal;
     font-weight: 400;
 }

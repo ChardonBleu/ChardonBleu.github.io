@@ -3,7 +3,6 @@
 body {
   background-color: #F6F6F6;
   font-family: "Roboto", "Sora", sans-serif;
-  font-optical-sizing: auto;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -79,8 +78,6 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 5;
-  border-color: red;
-  border-style: s;
 }
 .description__location {
   width: 100%;
@@ -206,7 +203,7 @@ body {
   max-height: 200px;
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .resto-link__new {
   font-weight: 500;
