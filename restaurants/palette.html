@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 
-  <html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant La palette du goût</title>
+    <title>Ohmyfood!</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -12,19 +12,95 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     >
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
 
 <body>
-    <header>
-        
-    </header>
+  <header class="header">
+    <nav class="header__nav">
+      <a href="../index.html">
+        <i class="fa-solid fa-arrow-left fa-xl header__nav--active"></i>
+      </a>
+    </nav>
+    <h1 class="header__title">ohmyfood</h1>
+  </header>
 
-    <main>
+    <main class="resto">
+
+      <section class="resto__title">
+        <div class="resto__img"><img src="" alt="Plat de La palette du goût"></div>
+        <div class="resto__name">
+          <h2>La palette du goût</h2>
+          <img src="" alt="icone coeur">
+        </div>
+      </section>
+
+      <section class="resto__menu">
+        <h3 class="menu__subtitle">Entrées</h3>
+
+        <article class="dish-card">
+          <h4 class="dish-card__title">Fricassée d'escargots</p>
+          <p class="dish-card__description">Au piment d'Espelette</p>
+          <p class="dish-card__amount">25€</p>
+        </article>
+
+        <article class="dish-card">
+          <h4 class="dish-card__title">Foie gras de canard mi-cuit</p>
+          <p class="dish-card__description">Et ses copeaux de truffe noire</p>
+          <p class="dish-card__amount">35€</p>
+        </article>
+
+      </section>
+
+      <section class="resto__menu">
+        <h3 class="menu__subtitle">Plats</h3>
+
+        <article class="dish-card">
+          <h4 class="dish-card__title">Filet de bœuf aux herbes</p>
+          <p class="dish-card__description">Accompagné de sa ribambelle de légumes</p>
+          <p class="dish-card__amount">40€</p>
+        </article>
+        
+      </section>
+
+      <section class="resto__menu">
+        <h3 class="menu__subtitle">Desserts</h3>
+
+        <article class="dish-card">
+          <h4 class="dish-card__title">Paris-Brest</p>
+          <p class="dish-card__description">Revisité</p>
+          <p class="dish-card__amount">18€</p>
+        </article>
+        
+      </section>
 
     </main>
 
-    <footer>
-
+    <footer class="footer">
+      <h2 class="footer__title">ohmyfood</h2>
+      <ul class="footer__list">
+        <li class="footer__link">
+          <a href="" class="footer__link">
+            <i class="fa-solid fa-utensils"></i>
+            <p class="footer__link--first">Proposer un restaurant</p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="footer__link">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p class="footer__link--first">Devenir partenaire</p>
+          </a>
+        </li>
+        <li>
+          <a href="" class="footer__link">
+            <p class="footer__link--second">Mentions légales</p>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@ohmyfood.com" class="footer__link">
+            <p class="footer__link--second">Contact</p>
+          </a>
+        </li>
+      </ul>
     </footer>
 </body>
