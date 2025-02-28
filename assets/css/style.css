@@ -109,12 +109,13 @@ body {
   height: 50px;
   width: 218px;
   border-radius: 25px;
-  background: linear-gradient(-5deg, #9356DC, #FF79DA);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  background: #9356DC;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0 50px 25px -25px #FF79DA inset;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 40px;
+  transition: background 1s ease-in-out, box-shadow 1s ease-in-out;
 }
 .description__button a {
   color: rgb(255, 255, 255);
@@ -123,8 +124,8 @@ body {
   text-decoration: none;
 }
 .description__button:hover {
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
-  background: linear-gradient(-5deg, #a170dc, #ff93e1);
+  background: #a87cdc;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35), 0 50px 25px -25px #ff9fe5 inset;
 }
 
 .howto {
@@ -203,7 +204,7 @@ body {
   max-height: 200px;
   width: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .resto-link__new {
   font-weight: 500;

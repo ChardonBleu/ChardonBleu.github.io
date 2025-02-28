@@ -1,3 +1,4 @@
+@use 'sass:color';
 //************** utilities ****************
 @function strip-unit($number) {
     @if type-of($number) == 'number' and not unitless($number) {
@@ -17,6 +18,9 @@ $green-light: #99E2D0;
 
 $primary: #9356DC;
 $secondary: #FF79DA;
+
+$light-primary: color.adjust($primary, $whiteness: 15%);
+$light-secondary: color.adjust($secondary, $whiteness: 15%);
 
 $gradient-angle: -5deg;
 
