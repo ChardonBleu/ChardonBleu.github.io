@@ -8,15 +8,3 @@ body {
     margin: auto;
     max-width: 1440px;
 }
-
-
-// **************  mixins and functions **************
-@mixin flex-vcenter {
-    display: flex;
-    align-items: center;
-}
-
-@mixin flex-col-hcenter {
-    @include flex-vcenter;
-    flex-direction: column;
-}
