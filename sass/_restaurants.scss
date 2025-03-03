@@ -12,6 +12,7 @@
         position: relative;
         width: 100%;
     }
+
 }
 .resto-link {
     text-decoration: none;
@@ -57,8 +58,31 @@
         }
     }
 }
+
 .resto-heart {
     position: absolute;
-    right: 30px;
-    bottom: 35px;
+    right: 50px;
+    bottom: 30px;
+    padding: 2px;
+    -webkit-text-fill-color: transparent;
+    &--full {
+        @include full-heart;
+        z-index:10;
+        &:hover {
+           @include appear-and-grows
+        }
+    }  
+    &--empty {
+        @include empty-heart;
+        z-index:0;
+        &:hover {
+            opacity: 0;
+        }
+        &:hover + .resto-heart--full {
+            @include appear-and-grows
+        }
+    }
+
 }
+
+
