@@ -1,11 +1,4 @@
 @use 'sass:color';
-//************** utilities ****************
-@function strip-unit($number) {
-    @if type-of($number) == 'number' and not unitless($number) {
-        @return calc($number / ($number * 0 + 1px));
-    }
-    @return $number;
-}
 
 // **************  colors **************
 $grey-dark: #353535;
@@ -34,11 +27,6 @@ $large-up: "only screen and (min-width: #{$large})";
 // **************  fonts  **************
 $base-font-number: 16;
 $base-font-size: #{$base-font-number}px;
-
-@function rem($size, $base: $base-font-number) {
-    @return calc(1rem * strip-unit($size) / $base);
-}
-
 
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Sora:wght@100..800&display=swap');
 
