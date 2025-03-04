@@ -1,11 +1,14 @@
-@import "variables";
-@import "utilities";
-@import "general";
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./abstracts/functions";
 
-@import "header";
-@import "footer";
+@import "./base/base";
+@import "./base/typography";
 
-@import "description";
-@import "howto";
-@import "restaurants";
-@import "menu";
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/description";
+@import "./layout/howto";
+@import "./layout/restaurants";
+
+@import "./pages/menu";
