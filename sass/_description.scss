@@ -30,21 +30,24 @@
         margin-bottom: 20px;
     }
     &__button {
-        height: 50px;
-        width: 218px;
-        border-radius: 25px;
-        @include flex-vcenter;
-        justify-content: center;
         margin-bottom: 40px;
+        @include button-basic;
         @include button-gradient;
         a {
             color: rgb(255, 255, 255);
-            @include font-medium;
-            font-size: rem(16px);
             text-decoration: none;
+            z-index: 20;
         }
         &:hover{
-            @include button-gradient-hover;
+            &::after {
+                opacity: 1;
+            }
+        }        
+        &::after {
+            content: "Explorez nos restaurants";
+            @include button-basic;
+            @include button-gradient-light
         }
+
     }
 }

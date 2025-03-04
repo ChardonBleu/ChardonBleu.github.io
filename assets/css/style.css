@@ -106,26 +106,49 @@ body {
   margin-bottom: 20px;
 }
 .description__button {
+  margin-bottom: 40px;
   height: 50px;
   width: 218px;
   border-radius: 25px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 40px;
+  font-weight: 500;
+  font-size: 1rem;
+  position: relative;
   background: #9356DC;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0 50px 25px -25px #FF79DA inset;
-  transition: all 500ms ease-in-out;
+  z-index: 10;
 }
 .description__button a {
   color: rgb(255, 255, 255);
+  text-decoration: none;
+  z-index: 20;
+}
+.description__button:hover::after {
+  opacity: 1;
+}
+.description__button::after {
+  content: "Explorez nos restaurants";
+  height: 50px;
+  width: 218px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: 500;
   font-size: 1rem;
-  text-decoration: none;
-}
-.description__button:hover {
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  opacity: 0;
   background: #a87cdc;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35), 0 50px 25px -25px #ff9fe5 inset;
+  transition: opacity 500ms ease-in-out;
 }
 
 .howto {
@@ -250,7 +273,7 @@ body {
           background-clip: text;
   opacity: 0;
   transform: scale(0);
-  transition: opacity 1000ms ease-in-out, transform 800ms ease-in-out;
+  transition: opacity 1000ms ease-in-out, transform 1000ms ease-in-out;
   z-index: 10;
 }
 .resto-heart--full:hover {
