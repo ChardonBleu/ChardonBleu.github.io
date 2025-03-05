@@ -1,0 +1,65 @@
+// **************  mixins **************
+@mixin flex-vcenter {
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-col-hcenter {
+    @include flex-vcenter;
+    flex-direction: column;
+}
+
+@mixin button-basic {
+    height: 50px;
+    width: 218px;
+    border-radius: 25px;
+    @include flex-vcenter;
+    justify-content: center;
+    @include font-medium;
+    font-size: rem(16px);
+}
+
+@mixin button-gradient {
+    position: relative;
+    background: $primary;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .25), 0 50px 25px -25px $secondary inset;
+    z-index: 10;
+}
+
+@mixin button-gradient-light {
+    color: rgb(255, 255, 255);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    opacity: 0;
+    background: $light-primary;
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, .35), 0 50px 25px -25px $light-secondary inset;
+    transition: opacity 500ms ease-in-out;
+}
+
+@mixin empty-heart {
+    -webkit-text-stroke: 1px black;
+    -moz-text-stroke: 1px black;
+    background: white;
+    background-clip: text;
+    opacity: 1;
+    transition: opacity 1000ms ease-in-out;
+}
+
+@mixin full-heart {
+    -webkit-text-stroke: 1px transparent;
+    -moz-text-stroke: 1px transparent;
+    background: linear-gradient(to bottom, $primary 0%, $secondary 100%);
+    background-clip: text;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity 1000ms ease-in-out, transform 1000ms ease-in-out;
+}
+
+@mixin appear-and-grows {
+    opacity: 1;
+    transform: scale(1);
+}

@@ -1,0 +1,103 @@
+.home {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: show-loader 0ms 1000ms both;
+}
+
+.loader {
+  background: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  padding: 50px 0 50px 0;
+  gap: 50px;
+
+  &__text {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-left: 0;
+    padding-right: 20px;
+    gap: 20px;
+
+  }
+
+  &__word {
+    font-size: rem(31px);
+    @include font-bold;
+    text-transform: uppercase;
+    color: #353535;
+    padding-right: 8px;
+  }
+
+  &__points {
+    box-sizing: border-box;
+    margin-bottom: 6px;
+    width: rem(10px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    animation: points 2s infinite linear backwards;
+  }
+
+  &__spinner {
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background:
+      radial-gradient(farthest-side, #FF79DA 94%, #FFF0) top/20px 20px no-repeat,
+      conic-gradient(#9356DC 30%, #FF79DA);
+    -webkit-mask-image: radial-gradient(farthest-side, #0000 calc(100% - 20px), #FFF 0);
+    -moz-mask-image: radial-gradient(farthest-side, #0000 calc(100% - 20px), #FFF 0);
+    mask-image: radial-gradient(farthest-side, #0000 calc(100% - 20px), #FFF 0);
+    animation: spinner 1s infinite linear;
+  }
+}
+
+@keyframes show-loader {
+  0% {
+    z-index: -10;
+    transform: translateX(-10000px);
+  }
+
+  100% {
+    z-index: 10;
+    transform: translateX(0);
+  }
+}
+
+@keyframes points {
+  0% {
+    box-shadow: 18px 0 #353535, -18px 0 #99E2D0;
+    background: #353535
+  }
+
+  25% {
+    box-shadow: 18px 0 #353535, -18px 0 #353535;
+    background: #99E2D0
+  }
+
+  50% {
+    box-shadow: 18px 0 #99E2D0, -18px 0 #353535;
+    background: #353535
+  }
+
+  75% {
+    box-shadow: 18px 0 #353535, -18px 0 #353535;
+    background: #99E2D0
+  }
+
+  100% {
+    box-shadow: 18px 0 #353535, -18px 0 #99E2D0;
+    background: #353535
+  }
+}
+
+@keyframes spinner {
+  100% {
+    transform: rotate(1turn)
+  }
+}

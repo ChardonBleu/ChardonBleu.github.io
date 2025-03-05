@@ -1,0 +1,12 @@
+// ************** functions **************
+@function strip-unit($number) {
+    @if type-of($number)=='number'and not unitless($number) {
+        @return calc($number / ($number * 0 + 1px));
+    }
+
+    @return $number;
+}
+
+@function rem($size, $base: $base-font-number) {
+    @return calc(1rem * strip-unit($size) / $base);
+}
