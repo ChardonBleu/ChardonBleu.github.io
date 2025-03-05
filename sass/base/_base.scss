@@ -8,3 +8,13 @@ body {
     margin: auto;
     max-width: 1440px;
 }
+
+.home {
+    width: 100%;
+    max-width: 1440px;
+    position: absolute;
+    top: 0;
+    margin: auto;
+    opacity: 0;
+    animation: show-loader 1500ms 1000ms both;
+  }

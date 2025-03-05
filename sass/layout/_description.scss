@@ -3,7 +3,7 @@
     @include flex-col-hcenter;
     position: relative;
     z-index: 5;
-    background-color: $grey-light2;
+    background-color: $grey-light1;
 
     &__location {
         width: 100%;
@@ -58,5 +58,21 @@
             @include button-gradient-light
         }
 
+    }
+}
+
+@media #{$medium-up} {
+    .description {
+        &__title {
+            font-size: rem(30px);
+        }
+    }
+}
+
+@media #{$large-up} {
+    .description {
+        &__title {
+            font-size: rem(40px);
+        }
     }
 }

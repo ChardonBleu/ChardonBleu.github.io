@@ -13,14 +13,15 @@ body {
 
 .home {
   width: 100%;
+  max-width: 1440px;
   position: absolute;
   top: 0;
-  left: 0;
-  animation: show-loader 0ms 1000ms both;
+  margin: auto;
+  opacity: 0;
+  animation: show-loader 1500ms 1000ms both;
 }
 
 .loader {
-  background: #EAEAEA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,11 +67,13 @@ body {
 @keyframes show-loader {
   0% {
     z-index: -10;
-    transform: translateX(-10000px);
+  }
+  50% {
+    z-index: 10;
+    opacity: 0;
   }
   100% {
-    z-index: 10;
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes points {
@@ -126,6 +129,16 @@ body {
   font-size: 1.875rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .header__title {
+    font-size: 2.1875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
 .footer {
   background-color: #353535;
   color: white;
@@ -167,7 +180,7 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 5;
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
 }
 .description__location {
   width: 100%;
@@ -241,6 +254,16 @@ body {
   transition: opacity 500ms ease-in-out;
 }
 
+@media only screen and (min-width: 768px) {
+  .description__title {
+    font-size: 1.875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .description__title {
+    font-size: 2.5rem;
+  }
+}
 .howto {
   background-color: white;
   padding: 30px 20px 40px 20px;
