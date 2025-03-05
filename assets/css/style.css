@@ -8,12 +8,12 @@ body {
   font-size: 16px;
   color: black;
   margin: auto;
-  max-width: 1440px;
+  max-width: 1824px;
 }
 
 .home {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1824px;
   position: absolute;
   top: 0;
   margin: auto;
@@ -267,6 +267,12 @@ body {
 .howto {
   background-color: white;
   padding: 30px 20px 40px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.howto__content {
+  width: 100%;
 }
 .howto__title {
   font-weight: 700;
@@ -309,6 +315,30 @@ body {
   justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .howto__content {
+    width: 100%;
+  }
+  .howto__list {
+    display: flex;
+  }
+  .howto__line {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .howto__content {
+    width: 90%;
+  }
+  .howto__list {
+    gap: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .howto__content {
+    width: 75%;
+  }
+}
 .restaurants {
   margin: 17.5px;
   font-weight: 700;
