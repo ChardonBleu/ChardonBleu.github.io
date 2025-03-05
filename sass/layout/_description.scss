@@ -1,19 +1,23 @@
 .description {
     text-align: center;
     @include flex-col-hcenter;
-    position:relative;
+    position: relative;
     z-index: 5;
-    &__location{
+    background-color: $grey-light2;
+
+    &__location {
         width: 100%;
         @include font-medium;
         font-size: rem(16px);
         color: $grey-dark;
         background-color: $grey-light2;
         box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, .25);
+
         &--icon {
             padding-right: 15px;
         }
     }
+
     &__title {
         @include font-bold;
         font-size: rem(24px);
@@ -21,6 +25,7 @@
         margin-top: 40px;
         margin-bottom: 5px;
     }
+
     &__subtitle {
         @include font-light;
         color: $grey-dark;
@@ -29,20 +34,24 @@
         margin-top: 5px;
         margin-bottom: 20px;
     }
+
     &__button {
         margin-bottom: 40px;
         @include button-basic;
         @include button-gradient;
+
         a {
             color: rgb(255, 255, 255);
             text-decoration: none;
             z-index: 20;
         }
-        &:hover{
+
+        &:hover {
             &::after {
                 opacity: 1;
             }
-        }        
+        }
+
         &::after {
             content: "Explorez nos restaurants";
             @include button-basic;
