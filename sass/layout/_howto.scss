@@ -74,6 +74,7 @@
         }
         &__list {
             gap: 20px;
+            padding-right: 20px;
         }
     }
 }
@@ -82,6 +83,9 @@
     .howto {
         &__content {
             width: 75%;
+        }
+        &__list {
+            padding-right: 30px;
         }
     }
 }

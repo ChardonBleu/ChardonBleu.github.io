@@ -332,19 +332,34 @@ body {
   }
   .howto__list {
     gap: 20px;
+    padding-right: 20px;
   }
 }
 @media only screen and (min-width: 1440px) {
   .howto__content {
     width: 75%;
   }
+  .howto__list {
+    padding-right: 30px;
+  }
 }
 .restaurants {
   margin: 17.5px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants__content {
+  width: 100%;
 }
 .restaurants__title {
   font-size: 1.5rem;
+}
+.restaurants__articles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .restaurants__article {
   display: flex;
@@ -439,4 +454,29 @@ body {
 .resto-heart--empty:hover + .resto-heart--full {
   opacity: 1;
   transform: scale(1);
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurants__content {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .restaurants__content {
+    width: 90%;
+  }
+  .restaurants__articles {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
+  .restaurants__article {
+    width: 44%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .restaurants__content {
+    width: 75%;
+  }
 }/*# sourceMappingURL=style.css.map */
