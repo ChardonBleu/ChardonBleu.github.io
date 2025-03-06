@@ -1,0 +1,19 @@
+.resto__heart {
+    position: relative;
+    width: 30px;
+    aspect-ratio: 1;
+}
+
+.heart {
+    position: absolute;
+    -webkit-text-fill-color: transparent;
+
+    &--full {
+        @include full-heart;
+    }
+
+    &--empty {
+        @include empty-heart;
+    }
+
+}

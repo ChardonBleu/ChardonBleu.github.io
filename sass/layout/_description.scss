@@ -36,28 +36,7 @@
     }
 
     &__button {
-        margin-bottom: 40px;
-        @include button-basic;
-        @include button-gradient;
-
-        a {
-            color: rgb(255, 255, 255);
-            text-decoration: none;
-            z-index: 20;
-        }
-
-        &:hover {
-            &::after {
-                opacity: 1;
-            }
-        }
-
-        &::after {
-            content: "Explorez nos restaurants";
-            @include button-basic;
-            @include button-gradient-light
-        }
-
+        @include pink-button-with-text($text:"Explorez nos restaurants")
     }
 }
 

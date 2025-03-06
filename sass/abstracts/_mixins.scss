@@ -43,10 +43,20 @@
 @mixin empty-heart {
     -webkit-text-stroke: 1px black;
     -moz-text-stroke: 1px black;
-    background: white;
+    background: transparent;
     background-clip: text;
     opacity: 1;
-    transition: opacity 1000ms ease-in-out;
+    transition: opacity 800ms ease-in-out;
+    z-index: 0;
+
+    &:hover {
+        opacity: 0.1;
+    }
+
+    &:hover + .heart--full {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @mixin full-heart {
@@ -56,10 +66,39 @@
     background-clip: text;
     opacity: 0;
     transform: scale(0);
-    transition: opacity 1000ms ease-in-out, transform 1000ms ease-in-out;
+    transition: opacity 800ms ease-in-out, transform 500ms ease-in-out;
+    z-index: 10;
+    &:hover {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 @mixin appear-and-grows {
     opacity: 1;
     transform: scale(1);
+}
+
+@mixin pink-button-with-text($text:"") {
+    margin-bottom: 40px;
+    @include button-basic;
+    @include button-gradient;
+
+    a {
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        z-index: 20;
+    }
+
+    &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+
+    &::after {
+        content: $text;
+        @include button-basic;
+        @include button-gradient-light
+    }
 }
