@@ -508,4 +508,27 @@ body {
   .restaurants__content {
     width: 75%;
   }
+}
+.resto__title {
+  position: relative;
+}
+.resto__title img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.resto__title .title__name {
+  background-color: #EAEAEA;
+  font-size: 1.75rem;
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
 }/*# sourceMappingURL=style.css.map */

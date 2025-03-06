@@ -1,0 +1,32 @@
+.resto{
+    
+    &__title {
+        
+        position: relative;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    
+        .title__name {
+            
+            background-color: $grey-light2;
+            font-size: rem(28px);
+            position: absolute;
+            bottom: 0px;
+            z-index:10;
+
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+         
+            padding-top: 20px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+    
+        }
+    }
+}
+
