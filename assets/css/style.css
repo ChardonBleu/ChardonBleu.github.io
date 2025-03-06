@@ -111,6 +111,10 @@ body {
   position: relative;
   z-index: 10;
 }
+.header__nav {
+  position: absolute;
+  left: 20px;
+}
 .header__nav--inactive {
   display: none;
 }
@@ -119,12 +123,14 @@ body {
 }
 .header__nav--icon {
   color: #353535;
+  text-decoration: none;
 }
 .header__title {
   font-family: "Shrikhand", "Sora", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.875rem;
+  justify-self: center;
 }
 
 @media only screen and (min-width: 768px) {

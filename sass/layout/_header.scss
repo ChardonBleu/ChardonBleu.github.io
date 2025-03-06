@@ -7,21 +7,29 @@
     position: relative;
     z-index: 10;
 
-    &__nav--inactive {
-        display: none;
-    }
+    &__nav{
+        position: absolute;
+        left: 20px;
+        
+        &--inactive {
+            display: none;
+        }
 
-    &__nav--active {
-        display: block;
-    }
+        &--active {
+            display: block;
+        }
 
-    &__nav--icon {
-        color: $grey-dark;
+        &--icon {
+            color: $grey-dark;
+            text-decoration: none;
+        }
+
     }
 
     &__title {
         @include shrikhand-regular;
         font-size: rem(30px);
+        justify-self: center;
     }
 }
 
