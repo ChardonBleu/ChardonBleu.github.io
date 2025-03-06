@@ -8,12 +8,10 @@ body {
   font-size: 16px;
   color: black;
   margin: auto;
-  max-width: 1824px;
 }
 
 .home {
   width: 100%;
-  max-width: 1824px;
   position: absolute;
   top: 0;
   margin: auto;

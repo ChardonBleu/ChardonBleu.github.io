@@ -33,6 +33,7 @@
             margin: 5px;
         }
     }
+
     &__icon {
         padding-right: 5px;
     }
@@ -47,6 +48,7 @@
         align-items: center;
         padding-top: 60px;
         padding-bottom: 30px;
+
         li:nth-child(3) {
             padding-left: 30px;
         }
@@ -55,6 +57,7 @@
             padding-left: 80px;
             padding-right: 50px,
         }
+
         &__list {
             display: flex;
         }
@@ -64,5 +67,5 @@
 
         }
     }
-    
+
 }
