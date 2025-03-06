@@ -19,10 +19,12 @@ $gradient-angle: -5deg;
 
 // **************  responsive **************
 $medium: 768px;
-$large: 1024px;
+$large: 992px;
+$xl: 1440px;
 
 $medium-up: "only screen and (min-width: #{$medium})";
 $large-up: "only screen and (min-width: #{$large})";
+$xl-up: "only screen and (min-width: #{$xl})";
 
 // **************  fonts  **************
 $base-font-number: 16;

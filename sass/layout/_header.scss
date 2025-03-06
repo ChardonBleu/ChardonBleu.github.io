@@ -24,3 +24,19 @@
         font-size: rem(30px);
     }
 }
+
+@media #{$medium-up} {
+    .header {
+        &__title {
+            font-size: rem(35px);
+        }
+    }
+}
+
+@media #{$large-up} {
+    .header {
+        &__title {
+            font-size: rem(40px);
+        }
+    }
+}

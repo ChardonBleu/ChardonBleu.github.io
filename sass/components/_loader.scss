@@ -1,13 +1,4 @@
-.home {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  animation: show-loader 0ms 1000ms both;
-}
-
 .loader {
-  background: #EAEAEA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,12 +51,15 @@
 @keyframes show-loader {
   0% {
     z-index: -10;
-    transform: translateX(-10000px);
+  }
+
+  50% {
+    z-index: 10;
+    opacity: 0;
   }
 
   100% {
-    z-index: 10;
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 

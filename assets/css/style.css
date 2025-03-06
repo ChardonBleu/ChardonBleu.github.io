@@ -8,19 +8,18 @@ body {
   font-size: 16px;
   color: black;
   margin: auto;
-  max-width: 1440px;
 }
 
 .home {
   width: 100%;
   position: absolute;
   top: 0;
-  left: 0;
-  animation: show-loader 0ms 1000ms both;
+  margin: auto;
+  opacity: 0;
+  animation: show-loader 1500ms 1000ms both;
 }
 
 .loader {
-  background: #EAEAEA;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -66,11 +65,13 @@ body {
 @keyframes show-loader {
   0% {
     z-index: -10;
-    transform: translateX(-10000px);
+  }
+  50% {
+    z-index: 10;
+    opacity: 0;
   }
   100% {
-    z-index: 10;
-    transform: translateX(0);
+    opacity: 1;
   }
 }
 @keyframes points {
@@ -126,6 +127,16 @@ body {
   font-size: 1.875rem;
 }
 
+@media only screen and (min-width: 768px) {
+  .header__title {
+    font-size: 2.1875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .header__title {
+    font-size: 2.5rem;
+  }
+}
 .footer {
   background-color: #353535;
   color: white;
@@ -159,7 +170,32 @@ body {
 .footer__link--second {
   margin: 5px;
 }
+.footer__icon {
+  padding-right: 5px;
+}
 
+@media only screen and (min-width: 992px) {
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .footer li:nth-child(3) {
+    padding-left: 30px;
+  }
+  .footer__title {
+    padding-left: 80px;
+    padding-right: 50px;
+  }
+  .footer__list {
+    display: flex;
+  }
+  .footer__link {
+    padding-left: 5px;
+  }
+}
 .description {
   text-align: center;
   display: flex;
@@ -167,7 +203,7 @@ body {
   flex-direction: column;
   position: relative;
   z-index: 5;
-  background-color: #EAEAEA;
+  background-color: #F6F6F6;
 }
 .description__location {
   width: 100%;
@@ -241,9 +277,25 @@ body {
   transition: opacity 500ms ease-in-out;
 }
 
+@media only screen and (min-width: 768px) {
+  .description__title {
+    font-size: 1.875rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .description__title {
+    font-size: 2.5rem;
+  }
+}
 .howto {
   background-color: white;
   padding: 30px 20px 40px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.howto__content {
+  width: 100%;
 }
 .howto__title {
   font-weight: 700;
@@ -286,12 +338,51 @@ body {
   justify-content: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .howto__content {
+    width: 100%;
+  }
+  .howto__list {
+    display: flex;
+  }
+  .howto__line {
+    width: 30%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .howto__content {
+    width: 90%;
+  }
+  .howto__list {
+    gap: 20px;
+    padding-right: 20px;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .howto__content {
+    width: 75%;
+  }
+  .howto__list {
+    padding-right: 30px;
+  }
+}
 .restaurants {
   margin: 17.5px;
   font-weight: 700;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.restaurants__content {
+  width: 100%;
 }
 .restaurants__title {
   font-size: 1.5rem;
+}
+.restaurants__articles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 .restaurants__article {
   display: flex;
@@ -386,4 +477,29 @@ body {
 .resto-heart--empty:hover + .resto-heart--full {
   opacity: 1;
   transform: scale(1);
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurants__content {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .restaurants__content {
+    width: 90%;
+  }
+  .restaurants__articles {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px 0;
+  }
+  .restaurants__article {
+    width: 44%;
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .restaurants__content {
+    width: 75%;
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,9 +1,18 @@
 .restaurants {
     margin: 17.5px;
     @include font-bold;
+    @include flex-col-hcenter;
+
+    &__content {
+        width: 100%;
+    }
 
     &__title {
         font-size: rem(24px);
+    }
+
+    &__articles {
+        @include flex-col-hcenter;
     }
 
     &__article {
@@ -97,4 +106,39 @@
         }
     }
 
+}
+
+@media #{$medium-up} {
+    .restaurants {
+        &__content {
+            width: 100%;
+        }
+    }
+}
+
+@media #{$large-up} {
+    .restaurants {
+        &__content {
+            width: 90%;
+        }
+
+        &__articles {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px 0;
+        }
+
+        &__article {
+            width: 44%;
+        }
+    }
+}
+
+@media #{$xl-up} {
+    .restaurants {
+        &__content {
+            width: 75%;
+        }
+    }
 }

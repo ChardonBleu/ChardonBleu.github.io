@@ -33,4 +33,39 @@
             margin: 5px;
         }
     }
+
+    &__icon {
+        padding-right: 5px;
+    }
+}
+
+
+
+@media #{$large-up} {
+    .footer {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        padding-top: 60px;
+        padding-bottom: 30px;
+
+        li:nth-child(3) {
+            padding-left: 30px;
+        }
+
+        &__title {
+            padding-left: 80px;
+            padding-right: 50px,
+        }
+
+        &__list {
+            display: flex;
+        }
+
+        &__link {
+            padding-left: 5px;
+
+        }
+    }
+
 }

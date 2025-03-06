@@ -25,7 +25,7 @@
     </div>
 
     <div class="home">
-      <header class="header">
+      <header class="header" id="header">
         <nav class="header__nav--inactive">
           <i class="fa-solid fa-arrow-left header__nav--icon"></i>
         </nav>
@@ -52,139 +52,153 @@
         </section>
 
         <section class="howto">
-          <h2 class="howto__title">Fonctionnnement</h2>
-          <ul class="howto__list">
-            <li class="howto__line">
-              <div>1</div>
-              <i
-                class="fa-solid fa-mobile-screen-button fa-lg howto__line--grey"
-              ></i>
-              <p>Choisissez un restaurant</p>
-            </li>
-            <li class="howto__line">
-              <div>2</div>
-              <i class="fa-solid fa-list-ul fa-lg howto__line--grey"></i>
-              <p>Composez votre menu</p>
-            </li>
-            <li class="howto__line">
-              <div>3</div>
-              <i class="fa-solid fa-store fa-lg howto__line--purple"></i>
-              <p>Dégustez au restaurant</p>
-            </li>
-          </ul>
+          <div class="howto__content">
+            <h2 class="howto__title">Fonctionnnement</h2>
+            <ul class="howto__list">
+              <li class="howto__line">
+                <div>1</div>
+                <i
+                  class="fa-solid fa-mobile-screen-button fa-lg howto__line--grey"
+                ></i>
+                <p>Choisissez un restaurant</p>
+              </li>
+              <li class="howto__line">
+                <div>2</div>
+                <i class="fa-solid fa-list-ul fa-lg howto__line--grey"></i>
+                <p>Composez votre menu</p>
+              </li>
+              <li class="howto__line">
+                <div>3</div>
+                <i class="fa-solid fa-store fa-lg howto__line--purple"></i>
+                <p>Dégustez au restaurant</p>
+              </li>
+            </ul>
+          </div>
         </section>
 
         <section id="restaurants" class="restaurants">
-          <h2 class="restaurants__title">Restaurants</h2>
+          <div class="restaurants__content">
+            <h2 class="restaurants__title">Restaurants</h2>
 
-          <article class="restaurants__article">
-            <a href="/restaurants/palette.html" class="resto-link">
-              <div class="resto-link__img">
-                <img
-                  src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
-                  alt="Un plat du restaurant Le palette du gôut"
-                />
-              </div>
-              <div class="resto-link__new">Nouveau</div>
-              <div class="resto-link__description">
-                <h3>La palette du goût</h3>
-                <p>Ménilmontant</p>
-              </div>
-            </a>
-            <div class="resto-heart resto-heart--empty">
-              <i class="fa-xl fa-heart fa-solid"></i>
-            </div>
-            <div class="resto-heart resto-heart--full">
-              <i class="fa-xl fa-heart fa-solid"></i>
-            </div>
-          </article>
+            <div class="restaurants__articles">
+              <article class="restaurants__article">
+                <a href="/restaurants/palette.html" class="resto-link">
+                  <div class="resto-link__img">
+                    <img
+                      src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                      alt="Un plat du restaurant Le palette du gôut"
+                    />
+                  </div>
+                  <div class="resto-link__new">Nouveau</div>
+                  <div class="resto-link__description">
+                    <h3>La palette du goût</h3>
+                    <p>Ménilmontant</p>
+                  </div>
+                </a>
+                <div class="resto-heart resto-heart--empty">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+                <div class="resto-heart resto-heart--full">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+              </article>
 
-          <article class="restaurants__article">
-            <a href="/restaurants/note.html" class="resto-link">
-              <div class="resto-link__img">
-                <img
-                  src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-                  alt="Un plat du restaurant La note enchantée"
-                />
-              </div>
-              <div class="resto-link__new">Nouveau</div>
-              <div class="resto-link__description">
-                <h3>La note enchantée</h3>
-                <p>Charonne</p>
-              </div>
-            </a>
-            <div class="resto-heart resto-heart--empty">
-              <i class="fa-xl fa-heart fa-solid"></i>
-            </div>
-            <div class="resto-heart resto-heart--full">
-              <i class="fa-xl fa-heart fa-solid"></i>
-            </div>
-          </article>
+              <article class="restaurants__article">
+                <a href="/restaurants/note.html" class="resto-link">
+                  <div class="resto-link__img">
+                    <img
+                      src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+                      alt="Un plat du restaurant La note enchantée"
+                    />
+                  </div>
+                  <div class="resto-link__new">Nouveau</div>
+                  <div class="resto-link__description">
+                    <h3>La note enchantée</h3>
+                    <p>Charonne</p>
+                  </div>
+                </a>
+                <div class="resto-heart resto-heart--empty">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+                <div class="resto-heart resto-heart--full">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+              </article>
 
-          <article class="restaurants__article">
-            <a href="/restaurants/french.html" class="resto-link">
-              <div class="resto-link__img">
-                <img
-                  src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
-                  alt="Un plat du restaurant A la française"
-                />
-              </div>
-              <div class="resto-link__description">
-                <h3>A la française</h3>
-                <p>Cité Rouge</p>
-              </div>
-            </a>
-            <div class="resto-heart resto-heart--empty">
-              <i class="fa-xl fa-heart fa-solid"></i>
-            </div>
-            <div class="resto-heart resto-heart--full">
-              <i class="fa-xl fa-heart fa-solid"></i>
-            </div>
-          </article>
+              <article class="restaurants__article">
+                <a href="/restaurants/french.html" class="resto-link">
+                  <div class="resto-link__img">
+                    <img
+                      src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+                      alt="Un plat du restaurant A la française"
+                    />
+                  </div>
+                  <div class="resto-link__description">
+                    <h3>A la française</h3>
+                    <p>Cité Rouge</p>
+                  </div>
+                </a>
+                <div class="resto-heart resto-heart--empty">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+                <div class="resto-heart resto-heart--full">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+              </article>
 
-          <article class="restaurants__article">
-            <a href="/restaurants/sense.html" class="resto-link">
-              <div class="resto-link__img">
-                <img
-                  src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-                  alt="Un plat du restaurant Le délice des sens"
-                />
-              </div>
-              <div class="resto-link__description">
-                <h3>Le délice des sens</h3>
-                <p>Folie-Méricourt</p>
-              </div>
-            </a>
-            <div class="resto-heart resto-heart--empty">
-              <i class="fa-xl fa-heart fa-solid"></i>
+              <article class="restaurants__article">
+                <a href="/restaurants/sense.html" class="resto-link">
+                  <div class="resto-link__img">
+                    <img
+                      src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                      alt="Un plat du restaurant Le délice des sens"
+                    />
+                  </div>
+                  <div class="resto-link__description">
+                    <h3>Le délice des sens</h3>
+                    <p>Folie-Méricourt</p>
+                  </div>
+                </a>
+                <div class="resto-heart resto-heart--empty">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+                <div class="resto-heart resto-heart--full">
+                  <i class="fa-xl fa-heart fa-solid"></i>
+                </div>
+              </article>
             </div>
-            <div class="resto-heart resto-heart--full">
-              <i class="fa-xl fa-heart fa-solid"></i>
-            </div>
-          </article>
+          </div>
         </section>
       </main>
 
       <footer class="footer">
         <h2 class="footer__title">ohmyfood</h2>
+
         <ul class="footer__list">
-          <li class="footer__link">
-            <a href="" class="footer__link">
-              <i class="fa-solid fa-utensils"></i>
-              <p class="footer__link--first">Proposer un restaurant</p>
+          <li>
+            <a href="#header" class="footer__link">
+              <p class="footer__link--first">
+                <i class="fa-solid fa-utensils footer__icon"></i>
+                Proposer un restaurant
+              </p>
             </a>
           </li>
+
           <li>
-            <a href="" class="footer__link">
-              <i class="fa-solid fa-handshake-angle"></i>
-              <p class="footer__link--first">Devenir partenaire</p>
+            <a href="#header" class="footer__link">
+              <p class="footer__link--first">
+                <i class="fa-solid fa-handshake-angle footer__icon"></i>
+                Devenir partenaire
+              </p>
             </a>
           </li>
+
           <li>
-            <a href="" class="footer__link">
+            <a href="#header" class="footer__link">
               <p class="footer__link--second">Mentions légales</p>
             </a>
           </li>
+
           <li>
             <a href="mailto:contact@ohmyfood.com" class="footer__link">
               <p class="footer__link--second">Contact</p>
