@@ -22,9 +22,13 @@
         position: relative;
         width: 100%;
     }
-
+    
 }
 
+.resto__heart {
+    right: 20px;
+    bottom: 40px;
+}
 .resto-link {
     text-decoration: none;
     width: 100%;
@@ -58,12 +62,11 @@
     }
 
     &__description {
-        margin: 20px;
+        margin: 20px 20px 0px 20px;
         color: black;
         height: 20%;
-        @include flex-vcenter;
+        display: flex;
         justify-content: space-between;
-
         h3 {
             font-size: rem(18px);
             margin: 0;

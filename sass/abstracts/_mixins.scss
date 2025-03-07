@@ -37,7 +37,7 @@
     opacity: 0;
     background: $light-primary;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, .35), 0 50px 25px -25px $light-secondary inset;
-    transition: opacity 500ms ease-in-out;
+    transition: opacity 300ms ease-in-out;
 }
 
 @mixin empty-heart {
@@ -46,14 +46,10 @@
     background: transparent;
     background-clip: text;
     opacity: 1;
-    transition: opacity 800ms ease-in-out;
+    transform: scale(1);
     z-index: 0;
 
-    &:hover {
-        opacity: 0.1;
-    }
-
-    &:hover + .heart--full {
+    &:hover+.heart--full {
         opacity: 1;
         transform: scale(1);
     }
@@ -66,8 +62,9 @@
     background-clip: text;
     opacity: 0;
     transform: scale(0);
-    transition: opacity 800ms ease-in-out, transform 500ms ease-in-out;
     z-index: 10;
+    transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+
     &:hover {
         opacity: 1;
         transform: scale(1);
