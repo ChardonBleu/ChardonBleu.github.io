@@ -1,14 +1,3 @@
-@keyframes menu-parts {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
 .resto {
     display: flex;
     flex-direction: column;
@@ -24,19 +13,7 @@
         margin-bottom: 0;
         width: 100%;
         padding: 0;
-
-
-        section:nth-child(1) {
-            animation: menu-parts $base-duration 0ms ease-in-out both;
-        }
-
-        section:nth-child(2) {
-            animation: menu-parts $base-duration 500ms ease-in-out both;
-        }
-
-        section:nth-child(3) {
-            animation: menu-parts $base-duration 1000ms ease-in-out both;
-        }
+        @include menu-appearence;
     }
 
     img {

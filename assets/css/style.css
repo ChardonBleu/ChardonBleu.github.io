@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Sora:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+@keyframes menu-parts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 body {
   background-color: #F6F6F6;
   font-family: "Roboto", "Sora", sans-serif;
@@ -520,15 +529,6 @@ body {
     width: 75%;
   }
 }
-@keyframes menu-parts {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
 .resto {
   display: flex;
   flex-direction: column;
@@ -546,13 +546,13 @@ body {
   padding: 0;
 }
 .resto__menu section:nth-child(1) {
-  animation: menu-parts 300ms 0ms ease-in-out both;
+  animation: menu-parts 300ms 600ms ease-in-out both;
 }
 .resto__menu section:nth-child(2) {
-  animation: menu-parts 300ms 500ms ease-in-out both;
+  animation: menu-parts 300ms 1200ms ease-in-out both;
 }
 .resto__menu section:nth-child(3) {
-  animation: menu-parts 300ms 1000ms ease-in-out both;
+  animation: menu-parts 300ms 1800ms ease-in-out both;
 }
 .resto img {
   width: 100%;

@@ -99,3 +99,22 @@
         @include button-gradient-light
     }
 }
+
+@keyframes menu-parts {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@mixin menu-appearence {
+    @for $n from 1 through 3{
+        section:nth-child(#{$n}) {
+            animation: menu-parts $base-duration calc(($base-duration * 2) * $n) ease-in-out both;
+        }
+    }
+}
