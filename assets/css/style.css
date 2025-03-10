@@ -568,13 +568,11 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 80%;
   margin: 0;
 }
-.resto .resto__heart {
+.resto__title .title__name .resto__heart {
   position: relative;
   margin-top: 70px;
-  margin-right: 0px;
 }
 .resto__section {
   background-color: #F6F6F6;
@@ -691,7 +689,7 @@ body {
     width: 80%;
   }
   .resto__section {
-    width: 98%;
+    width: 80%;
     align-self: center;
   }
   .resto__title {
@@ -700,8 +698,9 @@ body {
   .resto__title .title__name {
     width: 80%;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+  }
+  .resto__title .resto__heart {
+    margin-left: 30px;
   }
   .resto__heart {
     margin-top: 10px;
@@ -710,12 +709,12 @@ body {
 }
 @media only screen and (min-width: 1440px) {
   .resto__menu {
-    width: 60%;
+    width: 70%;
   }
   .resto__section {
-    width: 60%;
+    width: 70%;
   }
   .resto__title .title__name {
-    width: 60%;
+    width: 70%;
   }
 }/*# sourceMappingURL=style.css.map */
