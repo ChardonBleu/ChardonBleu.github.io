@@ -29,3 +29,6 @@ $xl-up: "only screen and (min-width: #{$xl})";
 // **************  fonts  **************
 $base-font-number: 16;
 $base-font-size: #{$base-font-number}px;
+
+// **************  animations  **************
+$base-duration: 300ms; // ms
