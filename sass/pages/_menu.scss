@@ -13,6 +13,7 @@
         margin-bottom: 0;
         width: 100%;
         padding: 0;
+        @include menu-appearence;
     }
 
     img {
@@ -70,6 +71,8 @@
         padding: 0 20px 30px 20px;
         box-sizing: border-box;
         width: 100%;
+        opacity: 0;
+        transform: translateX(-50px);
 
         .menu__subtitle {
             @include font-light;
@@ -85,6 +88,8 @@
                 margin-bottom: 12px;
             }
         }
+
+
 
         .dish-card {
             background-color: white;
@@ -164,11 +169,6 @@
                 margin-left: 30px;
             }
         }
-    }
-
-    .resto__heart {
-        margin-top: 10px;
-        margin-left: 20px;
     }
 }
 

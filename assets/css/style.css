@@ -1,5 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Sora:wght@100..800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+@keyframes menu-parts {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
 body {
   background-color: #F6F6F6;
   font-family: "Roboto", "Sora", sans-serif;
@@ -49,7 +58,7 @@ body {
   width: 0.625rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  animation: points 2s infinite linear backwards;
+  animation: points 1800ms infinite linear backwards;
 }
 .loader__spinner {
   width: 200px;
@@ -59,7 +68,7 @@ body {
   -webkit-mask-image: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 20px), #FFF 0);
   -moz-mask-image: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 20px), #FFF 0);
   mask-image: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 20px), #FFF 0);
-  animation: spinner 1s infinite linear;
+  animation: spinner 900ms infinite linear;
 }
 
 @keyframes show-loader {
@@ -109,7 +118,7 @@ body {
 }
 
 .heart {
-  padding: 3px;
+  padding: 1px;
   position: absolute;
   top: 10px;
   left: 5px;
@@ -124,7 +133,7 @@ body {
   opacity: 0;
   transform: scale(0);
   z-index: 10;
-  transition: opacity 500ms ease-in-out, transform 500ms ease-in-out;
+  transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
 .heart--full:hover {
   opacity: 1;
@@ -536,6 +545,15 @@ body {
   width: 100%;
   padding: 0;
 }
+.resto__menu section:nth-child(1) {
+  animation: menu-parts 300ms 600ms ease-in-out both;
+}
+.resto__menu section:nth-child(2) {
+  animation: menu-parts 300ms 1200ms ease-in-out both;
+}
+.resto__menu section:nth-child(3) {
+  animation: menu-parts 300ms 1800ms ease-in-out both;
+}
 .resto img {
   width: 100%;
   max-height: 383px;
@@ -582,6 +600,8 @@ body {
   padding: 0 20px 30px 20px;
   box-sizing: border-box;
   width: 100%;
+  opacity: 0;
+  transform: translateX(-50px);
 }
 .resto__section .menu__subtitle {
   font-weight: 300;
@@ -701,10 +721,6 @@ body {
   }
   .resto__title .resto__heart {
     margin-left: 30px;
-  }
-  .resto__heart {
-    margin-top: 10px;
-    margin-left: 20px;
   }
 }
 @media only screen and (min-width: 1440px) {
