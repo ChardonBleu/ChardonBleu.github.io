@@ -50,16 +50,12 @@
 
 @keyframes show-loader {
   0% {
-    z-index: -10;
-  }
-
-  50% {
-    z-index: 10;
     opacity: 0;
   }
 
   100% {
     opacity: 1;
+    z-index: 10;
   }
 }
 
