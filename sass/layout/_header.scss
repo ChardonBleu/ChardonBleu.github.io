@@ -7,10 +7,10 @@
     position: relative;
     z-index: 10;
 
-    &__nav{
+    &__nav {
         position: absolute;
         left: 20px;
-        
+
         &--inactive {
             display: none;
         }
