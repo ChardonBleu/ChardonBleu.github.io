@@ -1,7 +1,9 @@
 .howto {
     background-color: white;
     padding: 30px 20px 40px 20px;
-    @include flex-col-hcenter;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     &__content {
         width: 100%;
@@ -14,13 +16,13 @@
     &__list {
         list-style: none;
         padding: 0;
-
     }
 
     &__line {
         @include font-medium;
         font-size: rem(16px);
-        @include flex-vcenter;
+        display: flex;
+        align-items: center;
         gap: 20px;
         background-color: $grey-light1;
         box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, .15);
@@ -46,7 +48,8 @@
             border-radius: 50%;
             width: 24px;
             height: 24px;
-            @include flex-vcenter;
+            display: flex;
+            align-items: center;
             justify-content: center;
         }
     }

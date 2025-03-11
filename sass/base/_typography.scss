@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Shrikhand&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand');
 
 @mixin shrikhand-regular {
-    font-family: "Shrikhand", "Sora", sans-serif;
+    font-family: "Shrikhand", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900');
 
 @mixin roboto-regular {
-    font-family: "Roboto", "Sora", sans-serif;
+    font-family: "Roboto", sans-serif;
     font-style: normal;
     font-weight: 400;
 }

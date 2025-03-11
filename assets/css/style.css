@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&family=Sora:wght@100..800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900");
 @keyframes menu-parts {
   0% {
     opacity: 0;
@@ -11,7 +11,7 @@
 }
 body {
   background-color: #F6F6F6;
-  font-family: "Roboto", "Sora", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -108,17 +108,19 @@ body {
   }
 }
 .resto__heart {
-  position: relative;
-  width: 30px;
+  width: 22px;
   aspect-ratio: 1;
   position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-left: 10px;
 }
 
 .heart {
   padding: 1px;
   position: absolute;
-  top: 10px;
-  left: 5px;
+  bottom: -5px;
+  right: 0;
   -webkit-text-fill-color: transparent;
 }
 .heart--full {
@@ -159,9 +161,60 @@ body {
   transform: scale(1);
 }
 
+.pink-button {
+  font-weight: 500;
+  font-size: 1rem;
+  height: 50px;
+  width: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  align-self: center;
+  margin-bottom: 30px;
+  position: relative;
+  background: #9356DC;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0 50px 25px -25px #FF79DA inset;
+}
+.pink-button a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  height: 50px;
+  width: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+.pink-button:hover::after {
+  opacity: 1;
+}
+.pink-button::after {
+  content: "";
+  font-weight: 500;
+  font-size: 1rem;
+  height: 50px;
+  width: 218px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25px;
+  align-self: center;
+  margin-bottom: 30px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  font-size: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background: #a87cdc;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35), 0 50px 25px -25px #ff9fe5 inset;
+  transition: opacity 300ms ease-in-out;
+}
+
 .header {
   background-color: white;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -184,7 +237,7 @@ body {
   text-decoration: none;
 }
 .header__title {
-  font-family: "Shrikhand", "Sora", sans-serif;
+  font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.875rem;
@@ -207,7 +260,7 @@ body {
   padding: 8px 25px 8px 25px;
 }
 .footer__title {
-  font-family: "Shrikhand", "Sora", sans-serif;
+  font-family: "Shrikhand", sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 18px;
@@ -223,8 +276,6 @@ body {
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
-  padding: 0;
-  margin: 0;
 }
 .footer__link--first {
   font-weight: 500;
@@ -265,8 +316,6 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  z-index: 5;
   background-color: #F6F6F6;
 }
 .description__location {
@@ -294,51 +343,6 @@ body {
   width: 85%;
   margin-top: 5px;
   margin-bottom: 20px;
-}
-.description__button {
-  margin-bottom: 40px;
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 1rem;
-  position: relative;
-  background: #9356DC;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0 50px 25px -25px #FF79DA inset;
-  z-index: 10;
-}
-.description__button a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  z-index: 20;
-}
-.description__button:hover::after {
-  opacity: 1;
-}
-.description__button::after {
-  content: "Explorez nos restaurants";
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  opacity: 0;
-  background: #a87cdc;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35), 0 50px 25px -25px #ff9fe5 inset;
-  transition: opacity 300ms ease-in-out;
 }
 
 @media only screen and (min-width: 768px) {
@@ -536,19 +540,18 @@ body {
 }
 .resto {
   display: flex;
+  align-items: center;
   flex-direction: column;
   background-color: white;
   position: relative;
 }
 .resto__menu {
   background-color: #F6F6F6;
+  padding-bottom: 10px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  margin-top: 70px;
-  margin-bottom: 0;
   width: 100%;
-  padding: 0;
 }
 .resto__menu section:nth-child(1) {
   animation: menu-parts 300ms 600ms ease-in-out both;
@@ -592,6 +595,7 @@ body {
   text-overflow: ellipsis;
   white-space: nowrap;
   margin: 0;
+  padding-right: 10px;
 }
 .resto__title .title__name .resto__heart {
   position: relative;
@@ -702,53 +706,6 @@ body {
 .resto__section .dish-card__amount {
   font-weight: 700;
   font-size: 0.9375rem;
-}
-.resto__button {
-  margin-top: 40px;
-  align-self: center;
-  margin-bottom: 40px;
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 1rem;
-  position: relative;
-  background: #9356DC;
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25), 0 50px 25px -25px #FF79DA inset;
-  z-index: 10;
-}
-.resto__button a {
-  color: rgb(255, 255, 255);
-  text-decoration: none;
-  z-index: 20;
-}
-.resto__button:hover::after {
-  opacity: 1;
-}
-.resto__button::after {
-  content: "Commander";
-  height: 50px;
-  width: 218px;
-  border-radius: 25px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 500;
-  font-size: 1rem;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 0;
-  opacity: 0;
-  background: #a87cdc;
-  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35), 0 50px 25px -25px #ff9fe5 inset;
-  transition: opacity 300ms ease-in-out;
 }
 
 @media only screen and (min-width: 992px) {
