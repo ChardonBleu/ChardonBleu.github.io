@@ -15,8 +15,6 @@ $secondary: #FF79DA;
 $light-primary: color.adjust($primary, $whiteness: 15%);
 $light-secondary: color.adjust($secondary, $whiteness: 15%);
 
-$gradient-angle: -5deg;
-
 // **************  responsive **************
 $medium: 768px;
 $large: 992px;

@@ -1,8 +1,8 @@
 .description {
     text-align: center;
-    @include flex-col-hcenter;
-    position: relative;
-    z-index: 5;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     background-color: $grey-light1;
 
     &__location {
@@ -33,10 +33,6 @@
         width: 85%;
         margin-top: 5px;
         margin-bottom: 20px;
-    }
-
-    &__button {
-        @include pink-button-with-text($text:"Explorez nos restaurants")
     }
 }
 

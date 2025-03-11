@@ -1,7 +1,9 @@
 .restaurants {
     padding: 17.5px;
     @include font-bold;
-    @include flex-col-hcenter;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     &__content {
         width: 100%;
@@ -11,11 +13,15 @@
     }
 
     &__articles {
-        @include flex-col-hcenter;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     &__article {
-        @include flex-col-hcenter;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
         margin-bottom: 18px;
         background-color: white;
         border-radius: 15px;
@@ -54,11 +60,9 @@
         padding: 10px;
         width: 20%;
         max-width: 80px;
-
         position: absolute;
         right: 20px;
         top: 20px;
-
     }
 
     &__description {
@@ -67,6 +71,7 @@
         height: 20%;
         display: flex;
         justify-content: space-between;
+        
         h3 {
             font-size: rem(18px);
             margin: 0;

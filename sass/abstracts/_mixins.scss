@@ -1,39 +1,30 @@
 // **************  mixins **************
-@mixin flex-vcenter {
-    display: flex;
-    align-items: center;
-}
-
-@mixin flex-col-hcenter {
-    @include flex-vcenter;
-    flex-direction: column;
-}
-
 @mixin button-basic {
-    height: 50px;
-    width: 218px;
-    border-radius: 25px;
-    @include flex-vcenter;
-    justify-content: center;
     @include font-medium;
     font-size: rem(16px);
+    height: 50px;
+    width: 218px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    align-self: center;
+    margin-bottom: 30px;
 }
 
 @mixin button-gradient {
     position: relative;
     background: $primary;
     box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, .25), 0 50px 25px -25px $secondary inset;
-    z-index: 10;
 }
 
 @mixin button-gradient-light {
     color: rgb(255, 255, 255);
+    @include font-medium;
+    font-size: rem(16px);
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
-    right: 0;
-    z-index: 0;
     opacity: 0;
     background: $light-primary;
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, .35), 0 50px 25px -25px $light-secondary inset;
@@ -53,6 +44,12 @@
         opacity: 1;
         transform: scale(1);
     }
+
+    &:active+.heart--full {
+        opacity: 1;
+        transform: scale(1);
+    }
+
 }
 
 @mixin full-heart {
@@ -69,34 +66,10 @@
         opacity: 1;
         transform: scale(1);
     }
-}
 
-@mixin appear-and-grows {
-    opacity: 1;
-    transform: scale(1);
-}
-
-@mixin pink-button-with-text($text:"") {
-    margin-bottom: 40px;
-    @include button-basic;
-    @include button-gradient;
-
-    a {
-        color: rgb(255, 255, 255);
-        text-decoration: none;
-        z-index: 20;
-    }
-
-    &:hover {
-        &::after {
-            opacity: 1;
-        }
-    }
-
-    &::after {
-        content: $text;
-        @include button-basic;
-        @include button-gradient-light
+    &:active {
+        opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -111,8 +84,8 @@
     }
 }
 
-@mixin menu-appearence {
-    @for $n from 1 through 3{
+@mixin menu-appearance {
+    @for $n from 1 through 3 {
         section:nth-child(#{$n}) {
             animation: menu-parts $base-duration calc(($base-duration * 2) * $n) ease-in-out both;
         }
