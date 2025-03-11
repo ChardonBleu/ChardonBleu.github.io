@@ -1,30 +1,219 @@
 <!DOCTYPE html>
 
-  <html lang="en">
+<html lang="fr">
   <head>
-    <meta charset="UTF-8" >
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Restaurant La note enchantée</title>
+    <title>Ohmyfood!</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
       integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    >
-    <link rel="stylesheet" href="./assets/css/style.css">
+  >
+    <link rel="stylesheet" href="../assets/css/style.css">
   </head>
 
-<body>
-    <header>
-        
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="../index.html" class="header__nav--icon">
+          <i class="fa-solid fa-arrow-left fa-xl header__nav--active"></i>
+        </a>
+      </nav>
+      <h1 class="header__title">ohmyfood</h1>
     </header>
 
-    <main>
+    <main class="resto">
+      <section class="resto__title">
+        <img
+          src="../assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+          alt="La note enchantée"
+        >
 
+        <div class="title__name">
+          <h2 class="header__title">La note enchantée</h2>
+          <div class="resto__heart">
+            <div class="heart heart--empty">
+              <i class="fa-lg fa-heart fa-solid"></i>
+            </div>
+            <div class="heart heart--full">
+              <i class="fa-lg fa-heart fa-solid"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="resto__menu">
+        <section class="resto__section">
+          <h3 class="menu__subtitle">Entrées</h3>
+          <div class="menu__subtitle--underscore"></div>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Ravioles de foie gras</h4>
+              <div class="dish-card__description">
+                <p>Accompagnées de leur crème à la truffe</p>
+                <p class="dish-card__amount">25€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Caviar osciètre </h4>
+              <div class="dish-card__description">
+                <p>Sur blini à la farine de blé noir</p>
+                <p class="dish-card__amount">35€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Homard et espuma de potiron</h4>
+              <div class="dish-card__description">
+                <p>Marinés aux zestes d'orange</p>
+                <p class="dish-card__amount">20€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Foie gras de canard cuit entier</h4>
+              <div class="dish-card__description">
+                <p>Confiture de figue et pain toasté</p>
+                <p class="dish-card__amount">35€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+        </section>
+
+        <section class="resto__section">
+          <h3 class="menu__subtitle">Plats</h3>
+          <div class="menu__subtitle--underscore"></div>
+
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Noix de coquilles Saint-Jacque</h4>
+              <div class="dish-card__description">
+                <p>Sur lit de purée de céleri-rave</p>
+                <p class="dish-card__amount">40€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Langoustine poêlée</h4>
+              <div class="dish-card__description">
+                <p>Purée de patate douce</p>
+                <p class="dish-card__amount">35€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Mijoté de queue de bœuf</h4>
+              <div class="dish-card__description">
+                <p>Et riz sauvage aux zestes de citron</p>
+                <p class="dish-card__amount">44€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+        </section>
+
+        <section class="resto__section">
+          <h3 class="menu__subtitle">Desserts</h3>
+          <div class="menu__subtitle--underscore"></div>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Macaron noisette et chocolat</h4>
+              <div class="dish-card__description">
+                <p>Glace au caramel brun et sel de Guérande</p>
+                <p class="dish-card__amount">18€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Baba au rhum revisité</h4>
+              <div class="dish-card__description">
+                <p>Avec son coulis de citron</p>
+                <p class="dish-card__amount">22€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+          </article>
+          <article class="dish-card">
+            <div class="dish-card__text">
+              <h4 class="dish-card__title">Tarte au citron meringuée</h4>
+              <div class="dish-card__description">
+                <p>Déstructurée</p>
+                <p class="dish-card__amount">23€</p>
+              </div>
+            </div>
+            <div class="dish-card__checkmark">
+              <i class="fa-regular fa-circle-check"></i>
+            </div>
+            
+          </article>
+        </section>
+        <div class="pink-button">
+          <a href="">Commander</a>
+        </div>
+      </div>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+      <h2 class="footer__title">ohmyfood</h2>
+      <ul class="footer__list">
+        <li class="footer__link">
+          <a href="../index.html" class="footer__link">
+            <i class="fa-solid fa-utensils"></i>
+            <p class="footer__link--first">Proposer un restaurant</p>
+          </a>
+        </li>
+        <li>
+          <a href="../index.html" class="footer__link">
+            <i class="fa-solid fa-handshake-angle"></i>
+            <p class="footer__link--first">Devenir partenaire</p>
+          </a>
+        </li>
+        <li>
+          <a href="../index.html" class="footer__link">
+            <p class="footer__link--second">Mentions légales</p>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:contact@ohmyfood.com" class="footer__link">
+            <p class="footer__link--second">Contact</p>
+          </a>
+        </li>
+      </ul>
     </footer>
-</body>
+  </body>
+</html>

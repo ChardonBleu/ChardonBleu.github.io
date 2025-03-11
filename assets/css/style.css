@@ -25,7 +25,7 @@ body {
   top: 0;
   margin: auto;
   opacity: 0;
-  animation: show-loader 500ms 2000ms both;
+  animation: show-loader 800ms 1000ms both;
 }
 
 .loader {
@@ -58,7 +58,7 @@ body {
   width: 0.625rem;
   aspect-ratio: 1;
   border-radius: 50%;
-  animation: points 1800ms infinite linear backwards;
+  animation: points 1800ms linear backwards;
 }
 .loader__spinner {
   width: 200px;
@@ -68,7 +68,7 @@ body {
   -webkit-mask-image: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 20px), #FFF 0);
   -moz-mask-image: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 20px), #FFF 0);
   mask-image: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(100% - 20px), #FFF 0);
-  animation: spinner 900ms infinite linear;
+  animation: spinner 600ms 3 linear;
 }
 
 @keyframes show-loader {
@@ -554,13 +554,13 @@ body {
   width: 100%;
 }
 .resto__menu section:nth-child(1) {
-  animation: menu-parts 300ms 600ms ease-in-out both;
+  animation: menu-parts 300ms 0ms ease-in-out both;
 }
 .resto__menu section:nth-child(2) {
-  animation: menu-parts 300ms 1200ms ease-in-out both;
+  animation: menu-parts 300ms 450ms ease-in-out both;
 }
 .resto__menu section:nth-child(3) {
-  animation: menu-parts 300ms 1800ms ease-in-out both;
+  animation: menu-parts 300ms 900ms ease-in-out both;
 }
 .resto img {
   width: 100%;
@@ -651,7 +651,6 @@ body {
   color: #99E2D0;
   position: relative;
   font-size: 1.25rem;
-  transition: transform 300ms ease-in-out;
 }
 .resto__section .dish-card__checkmark .fa-circle-check::after {
   content: "";
@@ -675,9 +674,6 @@ body {
 .resto__section .dish-card__text:active + .dish-card__checkmark {
   width: 60px;
   transform: translateX(0px);
-}
-.resto__section .dish-card__text:active + .dish-card__checkmark .fa-circle-check {
-  transform: rotateZ(1turn);
 }
 .resto__section .dish-card__title {
   font-weight: 500;

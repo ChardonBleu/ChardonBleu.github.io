@@ -31,7 +31,7 @@
     width: rem(10px);
     aspect-ratio: 1;
     border-radius: 50%;
-    animation: points $base-duration * 6 infinite linear backwards;
+    animation: points $base-duration * 6 linear backwards;
   }
 
   &__spinner {
@@ -44,7 +44,7 @@
     -webkit-mask-image: radial-gradient(farthest-side, #0000 calc(100% - 20px), #FFF 0);
     -moz-mask-image: radial-gradient(farthest-side, #0000 calc(100% - 20px), #FFF 0);
     mask-image: radial-gradient(farthest-side, #0000 calc(100% - 20px), #FFF 0);
-    animation: spinner $base-duration * 3 infinite linear;
+    animation: spinner $base-duration * 2 3 linear;
   }
 }
 
