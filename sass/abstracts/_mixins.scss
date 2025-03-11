@@ -87,7 +87,7 @@
 @mixin menu-appearance {
     @for $n from 1 through 3 {
         section:nth-child(#{$n}) {
-            animation: menu-parts $base-duration calc(($base-duration * 2) * $n) ease-in-out both;
+            animation: menu-parts $base-duration calc(($base-duration * 1.5) * ($n - 1)) ease-in-out both;
         }
     }
 }
