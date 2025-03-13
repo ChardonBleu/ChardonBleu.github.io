@@ -14,5 +14,5 @@ body {
     top: 0;
     margin: auto;
     opacity: 0;
-    animation: show-loader 800ms 1000ms both;
+    animation: show-loader 1000ms 1000ms ease-in-out both;
 }
