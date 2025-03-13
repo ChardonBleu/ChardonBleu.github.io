@@ -25,7 +25,7 @@ body {
   top: 0;
   margin: auto;
   opacity: 0;
-  animation: show-loader 800ms 1000ms both;
+  animation: show-loader 1000ms 1000ms ease-in-out both;
 }
 
 .loader {
@@ -122,6 +122,7 @@ body {
   bottom: -5px;
   right: 0;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 .heart--full {
   -webkit-text-stroke: 1px transparent;
