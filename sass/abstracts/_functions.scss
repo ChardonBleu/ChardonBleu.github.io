@@ -1,6 +1,6 @@
 // ************** functions **************
 @function strip-unit($number) {
-    @if type-of($number)=='number' and not unitless($number) {
+    @if type-of($number)=='number'and not unitless($number) {
         @return calc($number / ($number * 0 + 1px));
     }
 

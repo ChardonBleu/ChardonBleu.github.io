@@ -110,6 +110,7 @@
                     color: $green-light;
                     position: relative;
                     font-size: rem(20px);
+                    transition: transform $base-duration ease-in-out;
 
                     &::after {
                         content: "";
@@ -136,6 +137,10 @@
                 &:active+.dish-card__checkmark {
                     width: 60px;
                     transform: translateX(0px);
+
+                    .fa-circle-check {
+                        transform: rotateZ(1turn);
+                    }
                 }
             }
 

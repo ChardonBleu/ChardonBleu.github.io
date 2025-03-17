@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900");
+@import url("https://fonts.cdnfonts.com/css/shrikhand");
+@import url("https://fonts.cdnfonts.com/css/roboto");
 @keyframes menu-parts {
   0% {
     opacity: 0;
@@ -17,6 +17,8 @@ body {
   font-size: 16px;
   color: black;
   margin: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home {
@@ -47,6 +49,7 @@ body {
 }
 .loader__word {
   font-size: 1.9375rem;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
   color: #353535;
@@ -163,6 +166,7 @@ body {
 }
 
 .pink-button {
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   height: 50px;
@@ -192,6 +196,7 @@ body {
 }
 .pink-button::after {
   content: "";
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   height: 50px;
@@ -203,6 +208,7 @@ body {
   align-self: center;
   margin-bottom: 30px;
   color: rgb(255, 255, 255);
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   position: absolute;
@@ -279,6 +285,7 @@ body {
   gap: 10px;
 }
 .footer__link--first {
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 16px;
   margin: 5px;
@@ -321,6 +328,7 @@ body {
 }
 .description__location {
   width: 100%;
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   color: #353535;
@@ -331,6 +339,7 @@ body {
   padding-right: 15px;
 }
 .description__title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
   width: 70%;
@@ -338,6 +347,7 @@ body {
   margin-bottom: 5px;
 }
 .description__subtitle {
+  font-family: "Roboto Light", sans-serif;
   font-weight: 300;
   color: #353535;
   font-size: 1.125rem;
@@ -367,6 +377,7 @@ body {
   width: 100%;
 }
 .howto__title {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 1.5rem;
 }
@@ -375,6 +386,7 @@ body {
   padding: 0;
 }
 .howto__line {
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 1rem;
   display: flex;
@@ -437,6 +449,7 @@ body {
 }
 .restaurants {
   padding: 17.5px;
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -485,6 +498,7 @@ body {
      object-fit: cover;
 }
 .resto-link__new {
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
   text-align: center;
@@ -510,6 +524,7 @@ body {
   margin: 0;
 }
 .resto-link__description p {
+  font-family: "Roboto Light", sans-serif;
   font-weight: 300;
   font-size: 1.0625rem;
   margin-top: 5px;
@@ -614,6 +629,7 @@ body {
   transform: translateX(-50px);
 }
 .resto__section .menu__subtitle {
+  font-family: "Roboto Light", sans-serif;
   font-weight: 300;
   text-transform: uppercase;
   margin: 0;
@@ -652,6 +668,7 @@ body {
   color: #99E2D0;
   position: relative;
   font-size: 1.25rem;
+  transition: transform 300ms ease-in-out;
 }
 .resto__section .dish-card__checkmark .fa-circle-check::after {
   content: "";
@@ -676,7 +693,11 @@ body {
   width: 60px;
   transform: translateX(0px);
 }
+.resto__section .dish-card__text:active + .dish-card__checkmark .fa-circle-check {
+  transform: rotateZ(1turn);
+}
 .resto__section .dish-card__title {
+  font-family: "Roboto Medium", sans-serif;
   font-weight: 500;
   font-size: 1.125rem;
   margin: 0;
@@ -686,6 +707,7 @@ body {
   white-space: nowrap;
 }
 .resto__section .dish-card__description {
+  font-family: "Roboto Light", sans-serif;
   font-weight: 300;
   font-size: 0.9375rem;
   display: flex;
@@ -701,6 +723,7 @@ body {
   text-overflow: ellipsis;
 }
 .resto__section .dish-card__amount {
+  font-family: "Roboto", sans-serif;
   font-weight: 700;
   font-size: 0.9375rem;
 }
