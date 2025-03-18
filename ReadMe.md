@@ -32,7 +32,9 @@ Ressources web:
 
 - Cours [Simplifiez vous le CSS avec SASS](https://openclassrooms.com/fr/courses/8069761-simplifiez-vous-le-css-avec-sass).  
 
-- Cours [Créez des animations CSS modernes](https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes).
+- Cours [Créez des animations CSS modernes](https://openclassrooms.com/fr/courses/5919246-creez-des-animations-css-modernes).  
+
+- [CSS-loaders (Temani Afif)](https://css-loaders.com/). 
 
 - Formation Grafikart [Comprendre Git](https://grafikart.fr/formations/git).  
 
